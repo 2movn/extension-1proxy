@@ -1,0 +1,35 @@
+{
+    "manifest_version": 2,
+    "name": "1Dayvn Proxy",
+    "description": "Extension support proxy by proxy.1dayvn.com",
+    "version": "1.0",
+    "permissions": [
+        "proxy",
+        "privacy",
+        "tabs",
+        "storage",
+        "<all_urls>",
+        "webRequest",
+        "webRequestBlocking"
+    ],
+    "background": {
+        "scripts": [
+            "background.js"
+        ]
+    },
+    "browser_action": {
+        "default_popup": "popup.html",
+        "default_title": "__1DAYVN PROXY__",
+        "default_icon": {
+            "16": "icons/icon16.png",
+            "48": "icons/icon48.png",
+            "128": "icons/icon128.png"
+        }
+    },
+    "icons": {
+        "16": "icons/icon16.png",
+        "48": "icons/icon48.png",
+        "128": "icons/icon128.png"
+    },
+    "minimum_chrome_version": "100.0.0"
+}

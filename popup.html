@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Proxy Extension</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 5px;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        .row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 5px;
+        }
+
+        #apiInput {
+            flex: 70%;
+        }
+
+        #getNewProxy {
+            flex: 30%;
+        }
+
+        #enableProxy,
+        #disableProxy {
+            flex: 50%;
+        }
+
+        .button-group {
+            display: flex;
+            gap: 10px;
+            width: 100%;
+        }
+
+        .info-2movn {
+            color: #700006;
+            padding: 2px;
+        }
+
+        input[type="text"],
+        button {
+            padding: 8px 12px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 14px;
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        button {
+            cursor: pointer;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        button:active {
+            background-color: #0056b3;
+            box-shadow: 0 2px #666;
+            transform: translateY(2px);
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        p {
+            margin-top: 5px;
+        }
+
+        #proxyInfo {
+            color: #189200;
+        }
+
+        .container {
+            width: 400px;
+            height: 280px;
+            padding: 10px;
+            border: 1px solid #00c4ff;
+            border-radius: 10px;
+        }
+
+        #ip-address {
+            color: #0056b3;
+            font: 2em sans-serif;
+            font-size: large;
+            font-weight: 700;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h4>Setting Proxy</h4>
+        <div class="row">
+            <div class="button-group">
+                <input type="text" id="apiInput" placeholder="Enter API Key">
+                <button id="getNewProxy">Get New Proxy</button>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="button-group">
+                <button id="disableProxy">Disable Proxy</button>
+                <button id="enableProxy" disabled>Enable Proxy</button>
+            </div>
+        </div>
+
+        <div class="row">
+            <label for="disableWebRTC">Disable WebRTC:</label>
+            <input type="checkbox" id="disableWebRTC">
+
+        </div>
+        <div class="row">
+            <div class="button-group">
+                <button id="Checkip">Check IP</button>
+                <p id="ip-address"> </p>
+            </div>
+        </div>
+        <div class="row">
+            <p id="proxyInfo">Status:</p>
+        </div>
+        <p class="info-2movn">Tool created by <a href="https://2movn.com" target="_blank">2movn.com</a> - Copyright <a
+                href="https://2movn.com" target="_blank">1dayvn.com</a></p>
+    </div>
+    <script src="popup.js"></script>
+</body>
+
+</html>
