@@ -6,3 +6,5 @@ Công cụ tạo kênh giả mạo và chuyển tiếp webrtc qua Google stun gi
 - Tải về: [extension.zip](https://github.com/2movn/extension-1proxy/releases/download/1.0.0/extension.zip)
 # Video Hướng dẫn
  - Xem Video:[https://youtu.be/3qhK8yZsZd4](https://youtu.be/3qhK8yZsZd4)
+# Licenses
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2F2movn%2Fextension-1proxy.svg?type=small)](https://app.fossa.com/projects/git%2Bgithub.com%2F2movn%2Fextension-1proxy?ref=badge_small)
